@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: url(./svg/stacked-waves-haikei.svg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header_inputbox {
+  padding: 0.5rem;
+  width: 60%;
+}
+
+.header_button {
+  padding: 0.5rem;
+}
+
+label {
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+main {
+  height: 90%;
+  width: 100%;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_container {
+  height: 90%;
+  width: 25rem;
+  background-color: coral;
+  border-radius: 1rem;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_container_weather-image {
+  height: 45%;
+  width: 100%;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#weather_image {
+  height: 80%;
+}
+
+.main_container_weather-info {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(244, 244, 244, 1) 30%,
+    rgb(253, 215, 45) 100%
+  );
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: black;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.locBox {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  font-family: "Tanker", sans-serif;
+  color: rgb(255, 200, 0);
+  -webkit-text-stroke-width: 0.001px;
+  -webkit-text-stroke-color: blue;
+  letter-spacing: 2px;
+}
+
+#locImg {
+  height: 50%;
+}
+
+.temperatureInfoField {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#temperature {
+  font-family: "Tanker", sans-serif;
+  font-size: 8em;
+  text-align: left;
+  width: 100%;
+  color: rgb(255, 200, 0);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ff7300;
+}
+
+#weather {
+  text-align: center;
+  font-size: 3em;
+  width: 100%;
+  color: rgb(255, 200, 0);
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #000000;
+  font-family: "Tanker", sans-serif;
+}
+
+.windhumidInfo {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:rgb(67, 67, 67);
+  font-family: "Tanker", sans-serif;
+    letter-spacing: 2px;
+}
+
+.InfoBox {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: larger;
+}
+
+.humidity {
+  justify-content: flex-end;
+}
+
+#windImg {
+  height: 130%;
+}
+#waterImg {
+  height: 80%;
+}
+
+@media (max-width: 420px) {
+  .main_container_weather-image {
+    height: 30%;
+  }
+
+  #weather_image {
+    height: 70%;
+  }
+
+  .main_container {
+    width: 90%;
+    height: 90%;
+  }
+
+  #weather {
+    -webkit-text-stroke-width: 0.9px;
+  }
+}

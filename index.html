@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp | cd-shrey13</title>
+    <link rel="icon" type="image/x-icon" href="./svg/wind.svg">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <span class="header_container">
+        <input
+          class="header_inputbox"
+          type="text"
+          name="cityName"
+          id="citynameBox"
+          placeholder="Enter Name of City"
+        />
+        <button type="button" class="header_button" id="getWeatherBtn">
+          Get Weather
+        </button>
+      </span>
+    </header>
+    <main id="main">
+      <div class="main_container">
+        <div class="main_container_weather-info" id="weather_info">
+          <div class="locBox">
+            <img src="./svg/location-pin-svgrepo-com.svg" alt="image" id="locImg">
+              <h3 id="location"></h3>
+          </div>
+          <div class="main_container_weather-image">
+            <img alt="Weather-Image" id="weather_image" />
+          </div>
+          <div class="TemperatureInfoField">
+            <h3 id="temperature"></h3>
+            <h3 id="weather"></h3>
+          </div>
+          <div class="windhumidInfo">
+            <div class="InfoBox">
+              <img src="./svg/wind.svg" alt="image" id="windImg">
+                <h3 id="windspeed"></h3>
+            </div>
+            <div class="InfoBox humidity">
+              <img src="./svg/water-drop.svg" alt="image" id="waterImg">
+                <h3 id="humidity"></h3>
+            </div>
+          </div>   
+          <!-- <div class="weatherInfoField">
+                </div> -->
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
