@@ -39,7 +39,7 @@ async function getWeather(latlong) {
 
 function setWeatherImage(weatherData) {
   const imageName = weatherData.weather[0].icon;
-  weatherImage.src = `/svg/${imageName}.svg`;
+  weatherImage.src = `svg/${imageName}.svg`;
 }
 
 function setWeahterInfo(weatherData) {
