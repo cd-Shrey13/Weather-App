@@ -129,9 +129,9 @@ main {
   font-size: 8em;
   text-align: left;
   width: 100%;
-  color: rgb(255, 200, 0);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #ff7300;
+  color: rgb(103, 66, 223);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #191914;
 }
 
 #weather {
