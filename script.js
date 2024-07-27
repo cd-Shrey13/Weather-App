@@ -2,9 +2,9 @@ const getWeatherBtn = document.getElementById("getWeatherBtn");
 const inputBox = document.getElementById("citynameBox");
 const weatherImage = document.getElementById("weather_image");
 const weatherInfoBox = document.getElementById("weather_info");
-const key = "d3fbdf9a29ec49af7e14d903b2af398a";
+const key = (API_KEY = "d3fbdf9a29ec49af7e14d903b2af398a");
 
-document.getElementById('main').style.visibility = `hidden`;
+document.getElementById("main").style.visibility = `hidden`;
 
 getWeatherBtn.addEventListener("click", async () => {
   const latlong = await getLatLong();
@@ -15,7 +15,7 @@ getWeatherBtn.addEventListener("click", async () => {
 });
 
 async function getLatLong() {
-  const geodesicAPI = `http://api.openweathermap.org/geo/1.0/direct?q=${inputBox.value}&appid=${key}`;
+  const geodesicAPI = `https://api.openweathermap.org/geo/1.0/direct?q=${inputBox.value}&appid=${key}`;
   try {
     const response = await fetch(geodesicAPI, {
       method: "GET",
